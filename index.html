@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>
+    <SANJAI></SANJAI> | ECE Student &amp; Technology Portfolio
+  </title>
+  <meta name="description"
+    content="Personal portfolio of C. Sanjai, an Electronics and Communication Engineering (ECE) student at Chennai Institute of Technology (Class of 2030). Exploring electronics, programming, and web development.">
+  <meta name="keywords"
+    content="C Sanjai, Sanjai C, ECE Student, Chennai Institute of Technology, CIT Chennai, Portfolio, Electronics and Communication Engineering, Web Development, Projects, SAN SOLAR">
+  <meta name="author" content="C. Sanjai">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="C. Sanjai | ECE Student &amp; Aspiring Technologist">
+  <meta property="og:description"
+    content="Portfolio showcasing engineering journey, web development skills, SAN SOLAR application, and technical projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.linkedin.com/in/sanjai-c28/">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ========================================================
+       PAGE LOADER (Subtle & Non-blocking)
+       ======================================================== -->
+  <div id="pageLoader" class="page-loader" aria-hidden="true">
+    <div class="loader-spinner">
+      <div class="spinner-ring"></div>
+      <span class="loader-logo">Sanjai C</span>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       ACCESSIBILITY SKIP LINK
+       ======================================================== -->
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================
+       NAVIGATION BAR
+       ======================================================== -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Sanjai C Homepage">
+        <span class="logo-text">Sanjai C</span>
+        <span class="logo-status-dot" title="Available for projects &amp; learning"></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active" data-nav="home">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" data-nav="about">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link" data-nav="skills">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link" data-nav="projects">Projects</a></li>
+          <li class="nav-item"><a href="#certificates" class="nav-link" data-nav="certificates">Certificates</a></li>
+          <li class="nav-item"><a href="#resume" class="nav-link" data-nav="resume">Resume</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Switch + Mobile Toggle) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobileMenuBtn" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="mobileDrawer">
+          <span class="hamburger-box">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-inner">
+        <ul class="mobile-nav-list">
+          <li><a href="#home" class="mobile-nav-link active"><span>01.</span> Home</a></li>
+          <li><a href="#about" class="mobile-nav-link"><span>02.</span> About</a></li>
+          <li><a href="#skills" class="mobile-nav-link"><span>03.</span> Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link"><span>04.</span> Projects</a></li>
+          <li><a href="#certificates" class="mobile-nav-link"><span>05.</span> Certificates</a></li>
+          <li><a href="#resume" class="mobile-nav-link"><span>06.</span> Resume</a></li>
+          <li><a href="#contact" class="mobile-nav-link"><span>07.</span> Contact</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <a href="https://www.linkedin.com/in/sanjai-c28/" target="_blank" rel="noopener noreferrer"
+            class="btn btn-secondary btn-block">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.8v8.37h-2.8V10.9M7.86 6.5a1.63 1.63 0 0 0-1.63 1.63 1.63 1.63 0 0 0 1.63 1.63 1.63 1.63 0 0 0 1.63-1.63A1.63 1.63 0 0 0 7.86 6.5Z" />
+            </svg>
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       MAIN CONTENT CONTAINER
+       ======================================================== -->
+  <main id="mainContent">
+
+    <!-- ======================================================
+         HERO SECTION
+         ====================================================== -->
+    <section id="home" class="hero-section">
+      <!-- Lightweight Background Particle Canvas -->
+      <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Ambient Glow Orbs -->
+      <div class="ambient-glow glow-blue" aria-hidden="true"></div>
+      <div class="ambient-glow glow-violet" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Status Tag -->
+          <div class="hero-badge reveal">
+            <span class="badge-dot"></span>
+            <span class="badge-text">ECE Undergraduate • Chennai Institute of Technology</span>
+          </div>
+
+          <!-- Main Greeting & Name -->
+          <h1 class="hero-title reveal">
+            Hi, I'm <span class="gradient-text">C. Sanjai</span>
+          </h1>
+
+          <!-- Dynamic Role Subtitle -->
+          <div class="hero-roles reveal">
+            <span class="role-static">I am an </span>
+            <span id="roleCycler" class="role-dynamic gradient-text-accent">ECE Student</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <!-- Hero Role Description (As requested) -->
+          <p class="hero-subtitle reveal">
+            ECE Student <span class="divider">•</span> Aspiring Technology Professional <span class="divider">•</span>
+            Future Innovator
+          </p>
+
+          <!-- Philosophy Statement (As requested) -->
+          <p class="hero-description reveal">
+            &ldquo;Exploring the intersection of electronics, communication, software, and emerging technologies.
+            Building skills and projects that turn ideas into practical solutions.&rdquo;
+          </p>
+
+          <!-- Hero CTA Actions -->
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary" id="heroExploreBtn">
+              <span>Explore My Work</span>
+              <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="heroContactBtn">
+              <span>Contact Me</span>
+              <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Social Links Strip -->
+          <div class="hero-socials reveal">
+            <span class="social-label">Find me on:</span>
+            <div class="social-links-group">
+              <!-- LinkedIn Profile (Exact URL provided by user) -->
+              <a href="https://www.linkedin.com/in/sanjai-c28/" target="_blank" rel="noopener noreferrer"
+                class="social-icon-btn" aria-label="C. Sanjai LinkedIn Profile" title="Connect on LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.8v8.37h-2.8V10.9M7.86 6.5a1.63 1.63 0 0 0-1.63 1.63 1.63 1.63 0 0 0 1.63 1.63 1.63 1.63 0 0 0 1.63-1.63A1.63 1.63 0 0 0 7.86 6.5Z" />
+                </svg>
+              </a>
+
+              <!-- GitHub Placeholder Link (Customize here) -->
+              <a href="https://github.com/sanjai-c28" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                aria-label="GitHub Profile Placeholder" title="GitHub (Update with your username)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
+                </svg>
+              </a>
+
+              <!-- Direct Email Shortcut -->
+              <a href="#contact" class="social-icon-btn" aria-label="Send direct email" title="Send email to Sanjai">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Profile Visual Showcase -->
+        <div class="hero-visual reveal">
+          <div class="profile-card-wrapper">
+            <!-- Glowing background aura -->
+            <div class="profile-glow"></div>
+
+            <div class="profile-card">
+              <!--
+                CUSTOMIZATION NOTE FOR SANJAI:
+                Replace "assets/profile.jpg" below with your actual photograph.
+                Keep aspect ratio 1:1 (square) for best visual presentation.
+              -->
+              <div class="profile-image-container">
+                <img src="assets/profile.jpg" alt="C. Sanjai - ECE Student at Chennai Institute of Technology"
+                  class="profile-img" width="380" height="380" loading="eager">
+                <div class="profile-overlay-gradient"></div>
+              </div>
+
+              <!-- Floating Micro Badges -->
+              <div class="floating-badge badge-top-right">
+                <div class="badge-icon">🏛️</div>
+                <div class="badge-content">
+                  <span class="badge-title">CIT Chennai</span>
+                  <span class="badge-desc">ECE Class of 2030</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <div class="badge-icon pulse-dot-green"></div>
+                <div class="badge-content">
+                  <span class="badge-title">Status</span>
+                  <span class="badge-desc">Building &amp; Learning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About Me section">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- ======================================================
+         ABOUT ME SECTION
+         ====================================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag">// 01. ABOUT ME</span>
+          <h2 class="section-title">Engineering Tomorrow's Technology</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Biography & Vision -->
+          <div class="about-text-column reveal">
+            <div class="glass-card bio-card">
+              <h3 class="bio-heading">
+                Driven by Curiosity, Grounded in Engineering Fundamentals
+              </h3>
+
+              <!-- Required Exact About Me Bio Content -->
+              <p class="bio-paragraph highlight-paragraph">
+                &ldquo;I'm C. Sanjai, an Electronics and Communication Engineering student at Chennai Institute of
+                Technology. I'm interested in electronics, programming, emerging technologies, and solving real-world
+                problems through innovative ideas. I'm continuously developing my technical skills and working toward
+                building meaningful projects.&rdquo;
+              </p>
+
+              <p class="bio-paragraph">
+                As a student of the Class of 2030 at <strong>Chennai Institute of Technology</strong>, I am actively
+                building a bridge between physical hardware and software logic. My journey involves hands-on exploration
+                in web development, circuit architecture, algorithmic problem solving, and renewable tech applications
+                like solar energy calculation tools.
+              </p>
+
+              <!-- Engineering Philosophy Pillars -->
+              <div class="philosophy-pills">
+                <div class="pill-item">
+                  <span class="pill-icon">⚡</span>
+                  <span class="pill-text">Hardware-Software Convergence</span>
+                </div>
+                <div class="pill-item">
+                  <span class="pill-icon">🌱</span>
+                  <span class="pill-text">Sustainable Tech Solutions</span>
+                </div>
+                <div class="pill-item">
+                  <span class="pill-icon">💡</span>
+                  <span class="pill-text">Continuous Practical Building</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Information Cards (As requested) -->
+          <div class="about-info-column">
+            <div class="info-cards-grid">
+              <!-- Card 1: Degree -->
+              <div class="glass-card info-card reveal">
+                <div class="info-card-icon degree-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div class="info-card-content">
+                  <span class="info-label">Degree</span>
+                  <h4 class="info-value">B.E. Electronics and Communication Engineering</h4>
+                  <p class="info-subtext">Undergraduate Program</p>
+                </div>
+              </div>
+
+              <!-- Card 2: Institution -->
+              <div class="glass-card info-card reveal">
+                <div class="info-card-icon college-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <div class="info-card-content">
+                  <span class="info-label">Institution</span>
+                  <h4 class="info-value">Chennai Institute of Technology</h4>
+                  <p class="info-subtext">Chennai, Tamil Nadu, India</p>
+                </div>
+              </div>
+
+              <!-- Card 3: Expected Graduation -->
+              <div class="glass-card info-card reveal">
+                <div class="info-card-icon grad-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="info-card-content">
+                  <span class="info-label">Expected Graduation</span>
+                  <h4 class="info-value">2030</h4>
+                  <p class="info-subtext">Four-Year Engineering Trajectory</p>
+                </div>
+              </div>
+
+              <!-- Card 4: Interests -->
+              <div class="glass-card info-card reveal">
+                <div class="info-card-icon interest-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="info-card-content">
+                  <span class="info-label">Interests</span>
+                  <h4 class="info-value">Web Dev, Electronics, Tech &amp; Innovation</h4>
+                  <p class="info-subtext">Interdisciplinary Exploration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SKILLS SECTION
+         ====================================================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag">// 02. TECHNICAL SKILLS</span>
+          <h2 class="section-title">Knowledge &amp; Capabilities</h2>
+          <div class="title-underline"></div>
+          <p class="section-description">
+            Transparent view of my current technical competencies and developing skills. Organized for straightforward
+            editing as I advance in my coursework.
+          </p>
+        </div>
+
+        <!-- Skills Filter Bar -->
+        <div class="skills-filter reveal" role="tablist" aria-label="Skills Category Filter">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Development</button>
+          <button class="filter-btn" data-filter="programming" role="tab" aria-selected="false">Programming</button>
+          <button class="filter-btn" data-filter="ece" role="tab" aria-selected="false">Electronics &amp; Comm</button>
+          <button class="filter-btn" data-filter="tools" role="tab" aria-selected="false">Tools &amp; Tech</button>
+          <button class="filter-btn" data-filter="soft" role="tab" aria-selected="false">Soft Skills</button>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="skills-grid" id="skillsGrid">
+
+          <!-- ================= CATEGORY: WEB DEVELOPMENT ================= -->
+          <!-- HTML5 -->
+          <div class="skill-card glass-card reveal" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon-wrap html-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"></path>
+                  <path d="m3.5 7.5 8.5 4.5 8.5-4.5"></path>
+                  <path d="M12 12v9.5"></path>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">HTML5</h4>
+                <span class="skill-badge badge-primary">Web Development</span>
+              </div>
+            </div>
+            <p class="skill-desc">Semantic document structure, accessible tags, modern responsive layouts, and SEO best
+              practices.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Proficiency</span>
+                <span class="progress-percent">85%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="skill-card glass-card reveal" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon-wrap css-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M14.31 8 20.05 17.94"></path>
+                  <path d="M9.69 8h11.48"></path>
+                  <path d="m7.38 12 5.74-9.94"></path>
+                  <path d="M9.69 16 3.95 6.06"></path>
+                  <path d="M14.31 16H2.83"></path>
+                  <path d="m16.62 12-5.74 9.94"></path>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">CSS3</h4>
+                <span class="skill-badge badge-primary">Web Development</span>
+              </div>
+            </div>
+            <p class="skill-desc">Flexbox, CSS Grid, custom properties (CSS variables), keyframe animations,
+              glassmorphism, and responsive breakpoints.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Proficiency</span>
+                <span class="progress-percent">80%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-card glass-card reveal" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon-wrap js-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 18a4 4 0 0 0 .8-2.5V8"></path>
+                  <path d="M8 8v8a4 4 0 0 0 4 4"></path>
+                  <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">JavaScript (ES6+)</h4>
+                <span class="skill-badge badge-primary">Web Development</span>
+              </div>
+            </div>
+            <p class="skill-desc">DOM manipulation, event delegation, form validation, responsive navigation logic, and
+              interactive client-side features.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Proficiency</span>
+                <span class="progress-percent">75%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= CATEGORY: PROGRAMMING ================= -->
+          <!-- C Programming -->
+          <div class="skill-card glass-card reveal" data-category="programming">
+            <div class="skill-header">
+              <div class="skill-icon-wrap c-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">C Programming</h4>
+                <span class="skill-badge badge-violet">Programming</span>
+              </div>
+            </div>
+            <p class="skill-desc">Foundational low-level programming: syntax, pointers, data structures, memory models,
+              and algorithmic logic for embedded computing.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Foundational Level</span>
+                <span class="progress-percent">70%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 70%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python -->
+          <div class="skill-card glass-card reveal" data-category="programming">
+            <div class="skill-header">
+              <div class="skill-icon-wrap python-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20"></path>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Python (Basics)</h4>
+                <span class="skill-badge badge-violet">Programming</span>
+              </div>
+            </div>
+            <p class="skill-desc">Core syntax, data structures, scripting fundamentals, and mathematical computational
+              thinking.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Developing Level</span>
+                <span class="progress-percent">65%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= CATEGORY: ELECTRONICS & COMMUNICATION ================= -->
+          <!-- Circuit Analysis & Design -->
+          <div class="skill-card glass-card reveal" data-category="ece">
+            <div class="skill-header">
+              <div class="skill-icon-wrap circuit-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12h5l2-5 4 10 2-5h7"></path>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Circuit Theory &amp; Analysis</h4>
+                <span class="skill-badge badge-cyan">ECE Core</span>
+              </div>
+            </div>
+            <p class="skill-desc">Ohm's and Kirchhoff's Laws, RLC networks, analog signal characteristics, and
+              electronic passive/active components.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Academic Foundations</span>
+                <span class="progress-percent">65%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Digital Electronics -->
+          <div class="skill-card glass-card reveal" data-category="ece">
+            <div class="skill-header">
+              <div class="skill-icon-wrap digital-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Digital Logic &amp; Systems</h4>
+                <span class="skill-badge badge-cyan">ECE Core</span>
+              </div>
+            </div>
+            <p class="skill-desc">Boolean algebra, logic gates, combinational and sequential circuit analysis,
+              flip-flops, counters, and registers.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Academic Foundations</span>
+                <span class="progress-percent">65%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- IoT & Microcontroller Concepts -->
+          <div class="skill-card glass-card reveal" data-category="ece">
+            <div class="skill-header">
+              <div class="skill-icon-wrap iot-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                  <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                  <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Microcontroller &amp; IoT Concepts</h4>
+                <span class="skill-badge badge-cyan">ECE Core</span>
+              </div>
+            </div>
+            <p class="skill-desc">Sensor interfacing paradigms, microcontroller architecture fundamentals (Arduino /
+              embedded boards), and wireless telemetry.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Learning &amp; Exploring</span>
+                <span class="progress-percent">60%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 60%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= CATEGORY: TOOLS & TECHNOLOGIES ================= -->
+          <!-- Git & GitHub -->
+          <div class="skill-card glass-card reveal" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon-wrap git-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="18" r="3"></circle>
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <line x1="6" y1="9" x2="6" y2="15"></line>
+                  <path d="M18 15V9a6 6 0 0 0-6-6H6"></path>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Git &amp; GitHub</h4>
+                <span class="skill-badge badge-amber">Tools</span>
+              </div>
+            </div>
+            <p class="skill-desc">Version control, repository management, commit best practices, branching, and
+              open-source collaboration workflow.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Proficiency</span>
+                <span class="progress-percent">75%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VS Code & Dev Workflow -->
+          <div class="skill-card glass-card reveal" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon-wrap vscode-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">VS Code &amp; Dev Environment</h4>
+                <span class="skill-badge badge-amber">Tools</span>
+              </div>
+            </div>
+            <p class="skill-desc">Modern IDE workflow, debugging extensions, Live Server, formatting standards, and
+              terminal integration.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Proficiency</span>
+                <span class="progress-percent">85%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Circuit Simulation (Tinkercad / Proteus / LTspice) -->
+          <div class="skill-card glass-card reveal" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon-wrap sim-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Circuit Simulation Tools</h4>
+                <span class="skill-badge badge-amber">Tools</span>
+              </div>
+            </div>
+            <p class="skill-desc">Virtual prototyping and circuit validation using Tinkercad, LTspice, and Proteus
+              simulation environments.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Developing Level</span>
+                <span class="progress-percent">65%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= CATEGORY: SOFT SKILLS ================= -->
+          <!-- Problem Solving & Analytical Thinking -->
+          <div class="skill-card glass-card reveal" data-category="soft">
+            <div class="skill-header">
+              <div class="skill-icon-wrap soft-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5">
+                  </path>
+                  <path d="M9 18h6"></path>
+                  <path d="M10 22h4"></path>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Problem Solving &amp; Logic</h4>
+                <span class="skill-badge badge-green">Soft Skills</span>
+              </div>
+            </div>
+            <p class="skill-desc">Deconstructing complex challenges into systematic steps, analytical troubleshooting,
+              and structured thinking.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Core Competency</span>
+                <span class="progress-percent">85%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Collaboration -->
+          <div class="skill-card glass-card reveal" data-category="soft">
+            <div class="skill-header">
+              <div class="skill-icon-wrap soft-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Team Collaboration</h4>
+                <span class="skill-badge badge-green">Soft Skills</span>
+              </div>
+            </div>
+            <p class="skill-desc">Active communication in collegiate team projects, peer code reviews, and
+              cross-functional technical synergy.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Core Competency</span>
+                <span class="progress-percent">80%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Adaptability & Rapid Learning -->
+          <div class="skill-card glass-card reveal" data-category="soft">
+            <div class="skill-header">
+              <div class="skill-icon-wrap soft-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+                  <line x1="12" y1="9" x2="12" y2="13"></line>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Adaptability &amp; Self-Learning</h4>
+                <span class="skill-badge badge-green">Soft Skills</span>
+              </div>
+            </div>
+            <p class="skill-desc">Quickly adopting new software frameworks, reading technical documentation, and
+              iterating based on constructive feedback.</p>
+            <div class="skill-progress-wrap">
+              <div class="progress-info">
+                <span class="progress-label">Core Competency</span>
+                <span class="progress-percent">88%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="--target-width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Skill Customization Guide Note -->
+        <div class="skills-customization-note reveal">
+          <span class="note-icon">💡</span>
+          <p>
+            <strong>Note for Sanjai:</strong> To edit skill names, add newly mastered tools, or update percentages,
+            simply modify the data attributes and tags in the <code>#skills</code> section of <code>index.html</code>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         PROJECTS SECTION
+         ====================================================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag">// 03. FEATURED WORK</span>
+          <h2 class="section-title">Projects &amp; Prototypes</h2>
+          <div class="title-underline"></div>
+          <p class="section-description">
+            Showcasing real-world applications and engineering systems built with clean code, purposeful design, and
+            scalable architecture.
+          </p>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: SAN SOLAR Customer Application (Required) -->
+          <article class="project-card glass-card reveal">
+            <div class="project-media">
+              <img src="assets/project-sansolar.jpg" alt="SAN SOLAR Customer Application Interface Mockup"
+                class="project-img" loading="lazy">
+              <div class="project-media-badge">
+                <span class="pulse-dot-green"></span>
+                Featured Project
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Renewable Tech &amp; Web App</div>
+              <h3 class="project-title">SAN SOLAR Customer Application</h3>
+              <p class="project-description">
+                A customer-focused solar panel installation application designed to estimate suitable solar capacity
+                based on available space, collect customer details, and support consultation requests.
+              </p>
+
+              <!-- Key Solution Points -->
+              <ul class="project-highlights">
+                <li>Instant solar capacity (kW) calculator based on rooftop square footage</li>
+                <li>Customer lead capture &amp; consultation request submission form</li>
+                <li>Clean, accessible UI built with high-contrast responsive styling</li>
+              </ul>
+
+              <!-- Tech Stack Tags (Required: HTML, CSS, JavaScript) -->
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Client Calculation</span>
+              </div>
+
+              <!-- Working Project Actions -->
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary open-solar-modal-btn"
+                  aria-label="Try Interactive Solar Calculator Demo">
+                  <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                  <span>Interactive Demo</span>
+                </button>
+                <button class="btn btn-sm btn-secondary open-project-details-btn" data-project="sansolar"
+                  aria-label="View SAN SOLAR project details">
+                  <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  <span>Case Study</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Smart IoT & ECE Prototype (Hardware Innovation) -->
+          <article class="project-card glass-card reveal">
+            <div class="project-media">
+              <img src="assets/project-future.jpg" alt="Smart IoT and ECE Embedded Telemetry Laboratory Prototype" class="project-img"
+                loading="lazy">
+              <div class="project-media-badge badge-upcoming">
+                <span class="pulse-dot-violet"></span>
+                In Concept Phase
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Hardware &amp; IoT Innovation</div>
+              <h3 class="project-title">Smart IoT &amp; ECE Prototype</h3>
+              <p class="project-description">
+                An embedded system prototyping project exploring microcontroller telemetry, smart sensor nodes,
+                OLED metric displays, and real-time wireless data acquisition.
+              </p>
+
+              <!-- Key Solution Points -->
+              <ul class="project-highlights">
+                <li>Microcontroller firmware architecture with low-power consumption</li>
+                <li>Sensor data acquisition and cloud dashboard visualization</li>
+                <li>Designed as a cornerstone ECE laboratory research project</li>
+              </ul>
+
+              <!-- Tech Stack Tags -->
+              <div class="project-tags">
+                <span class="tech-tag">Embedded C/C++</span>
+                <span class="tech-tag">Microcontroller</span>
+                <span class="tech-tag">Sensors</span>
+                <span class="tech-tag">IoT</span>
+              </div>
+
+              <!-- Working Project Actions -->
+              <div class="project-actions">
+                <button class="btn btn-sm btn-secondary open-project-details-btn" data-project="future"
+                  aria-label="View future project roadmap">
+                  <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                  <span>Project Roadmap</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         CERTIFICATES SECTION
+         ====================================================== -->
+    <section id="certificates" class="section certificates-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag">// 04. CREDENTIALS</span>
+          <h2 class="section-title">Certificates &amp; Achievements</h2>
+          <div class="title-underline"></div>
+          <p class="section-description">
+            Recognitions, verified online coursework, and technical training milestones completed during my academic
+            journey.
+          </p>
+        </div>
+
+        <!-- Certificates Grid -->
+        <div class="certificates-grid">
+
+          <!-- Certificate 1: IIT Madras Data Science & AI (Featured) -->
+          <div class="certificate-card glass-card reveal">
+            <div class="cert-icon-badge cert-badge-featured">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">IIT Madras &bull; Centre for Outreach and Digital Education (CODE)</span>
+              <h3 class="cert-title">Data Science and AI (8-Week Certification Course)</h3>
+              <div class="cert-meta">
+                <span class="cert-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  Completed: October 2024
+                </span>
+                <span class="cert-status verified-badge">Verified Credential</span>
+              </div>
+              <p class="cert-desc">
+                Successfully completed the 8-week intensive certification course in Data Science and AI conducted by the
+                Centre for Outreach and Digital Education (CODE), Indian Institute of Technology Madras (School Connect).
+              </p>
+            </div>
+            <div class="cert-footer">
+              <button class="btn btn-sm btn-primary view-cert-btn"
+                data-cert-title="Data Science and AI"
+                data-cert-issuer="Indian Institute of Technology Madras (IIT Madras - CODE)"
+                data-cert-date="October 2024"
+                data-cert-img="assets/cert-iitm-datascience-ai.png"
+                data-cert-note="Official Certificate of Completion awarded to C. Sanjai by Prof. Andrew Thangaraj, Chair, IITM CODE.">
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>View Certificate</span>
+              </button>
+              <a href="assets/cert-iitm-datascience-ai.png" download="IITM_DataScience_AI_Certificate.png" class="btn btn-sm btn-outline" title="Download Certificate">
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         RESUME SECTION
+         ====================================================== -->
+    <section id="resume" class="section resume-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag">// 05. CURRICULUM VITAE</span>
+          <h2 class="section-title">Resume &amp; Academic Profile</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="resume-wrapper glass-card reveal">
+          <div class="resume-intro-content">
+            <div class="resume-badge">
+              <span class="pulse-dot-cyan"></span>
+              Official Academic Snapshot
+            </div>
+            <h3 class="resume-heading">C. Sanjai &mdash; Undergraduate Engineering Resume</h3>
+            <p class="resume-text">
+              A comprehensive summary of my educational background at Chennai Institute of Technology, foundational
+              engineering coursework in Electronics and Communication, core technical proficiencies, certified training
+              in Data Science &amp; AI from IIT Madras, and project portfolio.
+            </p>
+
+            <!-- Two Required Actions (View Resume and Download Resume) -->
+            <div class="resume-cta-buttons">
+              <button id="viewResumeBtn" class="btn btn-primary">
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>Preview Resume (PDF)</span>
+              </button>
+
+              <a href="assets/C_Sanjai_Resume.pdf" download="C_Sanjai_Resume.pdf" id="downloadResumeBtn"
+                class="btn btn-secondary">
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+            </div>
+
+            <!-- PDF custom instruction note -->
+            <p class="resume-note">
+              <em>Official verified PDF document: <code>assets/C_Sanjai_Resume.pdf</code>. Available for instant inline preview and high-resolution PDF download.</em>
+            </p>
+          </div>
+
+          <!-- Interactive On-Page Resume Snapshot Card -->
+          <div class="resume-snapshot">
+            <div class="snapshot-header">
+              <span class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </span>
+              <span class="snapshot-title">resume_overview.md</span>
+            </div>
+            <div class="snapshot-body">
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-period">2026 &mdash; 2030 (Expected)</span>
+                  <h4 class="timeline-title">B.E. in Electronics and Communication Engineering</h4>
+                  <p class="timeline-place">Chennai Institute of Technology, Chennai</p>
+                  <p class="timeline-details">Undergraduate coursework focusing on circuits, electronics, signal
+                    systems, microcontrollers, and software development.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-period">Current Focus</span>
+                  <h4 class="timeline-title">Software &amp; Web Engineering</h4>
+                  <p class="timeline-place">Independent Study &amp; Projects</p>
+                  <p class="timeline-details">Developing applications with HTML5, CSS3, JavaScript; building tools like
+                    the SAN SOLAR rooftop estimation platform.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-period">Future Objectives</span>
+                  <h4 class="timeline-title">IoT, Embedded Systems &amp; Innovation</h4>
+                  <p class="timeline-place">Chennai Institute of Technology Labs</p>
+                  <p class="timeline-details">Aspirations in hardware-software codesign, robotics, automation, and
+                    real-world technology problem solving.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         CONTACT SECTION
+         ====================================================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag">// 06. GET IN TOUCH</span>
+          <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+          <div class="title-underline"></div>
+          <p class="section-description">
+            Feel free to reach out for project collaborations, technical inquiries, or engineering discussions. I am
+            always open to new learning opportunities!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels Info Column -->
+          <div class="contact-info-column reveal">
+            <div class="glass-card contact-info-card">
+              <h3 class="contact-info-title">Contact Information</h3>
+              <p class="contact-info-desc">
+                As a student at Chennai Institute of Technology, I welcome constructive feedback, engineering
+                mentorship, and student collaborations.
+              </p>
+
+              <div class="contact-methods-list">
+                <!-- LinkedIn (Exact link from user) -->
+                <a href="https://www.linkedin.com/in/sanjai-c-8a284a438/" target="_blank" rel="noopener noreferrer"
+                  class="contact-method-item">
+                  <div class="method-icon linkedin-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                      fill="currentColor">
+                      <path
+                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.8v8.37h-2.8V10.9M7.86 6.5a1.63 1.63 0 0 0-1.63 1.63 1.63 1.63 0 0 0 1.63 1.63 1.63 1.63 0 0 0 1.63-1.63A1.63 1.63 0 0 0 7.86 6.5Z" />
+                    </svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">LinkedIn Profile</span>
+                    <span class="method-value">sanjai-c28</span>
+                    <span class="method-sub">Click to visit profile</span>
+                  </div>
+                </a>
+
+                <!-- Email Placeholder (Functional link) -->
+                <a href="mailto:sanjai.ece.cit@example.com?subject=Hello%20Sanjai%20-%20From%20Portfolio"
+                  class="contact-method-item" id="directEmailLink">
+                  <div class="method-icon email-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Email Address</span>
+                    <!-- Editable placeholder: Update with your real email in index.html -->
+                    <span class="method-value">sanjailearn2010@gmail.com</span>
+                    <span class="method-sub">Click to compose email</span>
+                  </div>
+                </a>
+
+                <!-- Location -->
+                <div class="contact-method-item">
+                  <div class="method-icon location-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Campus Location</span>
+                    <span class="method-value">Chennai Institute of Technology</span>
+                    <span class="method-sub">Chennai, Tamil Nadu, India</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Integration transparency note as requested -->
+              <div class="static-backend-notice">
+                <span class="notice-icon">ℹ️</span>
+                <p>
+                  <strong>Static Site Note:</strong> This frontend validates your message client-side and triggers a
+                  direct email composition. To connect an automated backend, simply add your Formspree endpoint into the
+                  form's <code>action</code> attribute.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column (Required Fields: Name, Email, Subject, Message) -->
+          <div class="contact-form-column reveal">
+            <div class="glass-card form-card">
+              <h3 class="form-title">Send a Direct Message</h3>
+
+              <!--
+                BACKEND INTEGRATION POINT:
+                To receive messages directly to your inbox via a free static backend service:
+                1. Sign up at https://formspree.io (free)
+                2. Replace action="#" with action="https://formspree.io/f/YOUR_FORM_ID"
+                3. Set method="POST"
+              -->
+              <form id="contactForm" class="contact-form" novalidate>
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="contactName" class="form-label">
+                    Your Name <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Sanjai C"
+                      required autocomplete="name">
+                  </div>
+                  <span class="error-message" id="nameError" aria-live="polite"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">
+                    Email Address <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <input type="email" id="contactEmail" name="email" class="form-input"
+                      placeholder="e.g. sanjai-c@example.com" required autocomplete="email">
+                  </div>
+                  <span class="error-message" id="emailError" aria-live="polite"></span>
+                </div>
+
+                <!-- Subject Field -->
+                <div class="form-group">
+                  <label for="contactSubject" class="form-label">
+                    Subject <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <line x1="4" y1="9" x2="20" y2="9"></line>
+                      <line x1="4" y1="15" x2="20" y2="15"></line>
+                      <line x1="10" y1="3" x2="8" y2="21"></line>
+                      <line x1="16" y1="3" x2="14" y2="21"></line>
+                    </svg>
+                    <input type="text" id="contactSubject" name="subject" class="form-input"
+                      placeholder="e.g. Project Inquiry / Collaboration" required>
+                  </div>
+                  <span class="error-message" id="subjectError" aria-live="polite"></span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                  <label for="contactMessage" class="form-label">
+                    Your Message <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper textarea-wrapper">
+                    <textarea id="contactMessage" name="message" class="form-textarea" rows="5"
+                      placeholder="Share your message, thoughts, or questions here..." required></textarea>
+                  </div>
+                  <span class="error-message" id="messageError" aria-live="polite"></span>
+                </div>
+
+                <!-- Form Submit Button -->
+                <button type="submit" id="submitFormBtn" class="btn btn-primary btn-block">
+                  <span class="btn-text">Send Message</span>
+                  <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo" aria-label="Sanjai C Homepage">
+            <span class="logo-text">Sanjai C</span>
+          </a>
+          <p class="footer-tagline">
+            Electronics and Communication Engineering &bull; Chennai Institute of Technology
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Quick Links">
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <!-- Required: "Designed and Built by C. Sanjai" -->
+        <p class="copyright-text">
+          Designed and Built by <strong>C. Sanjai</strong> &copy; <span id="currentYear"></span>. All rights reserved.
+        </p>
+
+        <div class="footer-social-links">
+          <!-- LinkedIn Link in Footer (Required) -->
+          <a href="https://www.linkedin.com/in/sanjai-c-8a284a438/" target="_blank" rel="noopener noreferrer"
+            class="footer-social-link" aria-label="C. Sanjai on LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.8v8.37h-2.8V10.9M7.86 6.5a1.63 1.63 0 0 0-1.63 1.63 1.63 1.63 0 0 0 1.63 1.63 1.63 1.63 0 0 0 1.63-1.63A1.63 1.63 0 0 0 7.86 6.5Z" />
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       BACK TO TOP FLOATING BUTTON
+       ======================================================== -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top of page" title="Scroll back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ========================================================
+       INTERACTIVE MODALS
+       ======================================================== -->
+
+  <!-- 1. SAN SOLAR Interactive Calculator Demo Modal -->
+  <div id="solarModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="solarModalTitle">
+    <div class="modal-container glass-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-tag">☀️ INTERACTIVE DEMO</span>
+          <h3 id="solarModalTitle" class="modal-title">SAN SOLAR &mdash; Capacity Estimator</h3>
+        </div>
+        <button class="modal-close-btn" data-close-modal="solarModal" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">
+          Test the core algorithm behind the <strong>SAN SOLAR</strong> customer application. Enter your approximate
+          available rooftop area to calculate the estimated solar capacity, panel count, and annual clean energy
+          generation.
+        </p>
+
+        <div class="solar-calc-form">
+          <div class="form-group">
+            <label for="solarAreaInput" class="form-label">Available Rooftop Area (in Sq. Ft.):</label>
+            <div class="input-wrapper">
+              <input type="number" id="solarAreaInput" class="form-input" min="100" max="10000" step="50" value="800">
+              <span class="input-suffix">sq. ft.</span>
+            </div>
+            <input type="range" id="solarAreaRange" class="solar-range-slider" min="100" max="5000" step="50"
+              value="800">
+          </div>
+
+          <div class="solar-results-grid">
+            <div class="result-card">
+              <span class="result-label">Recommended Capacity</span>
+              <span class="result-value" id="calcKw">8.0 kWp</span>
+            </div>
+            <div class="result-card">
+              <span class="result-label">Estimated Solar Panels</span>
+              <span class="result-value" id="calcPanels">16 Panels</span>
+            </div>
+            <div class="result-card">
+              <span class="result-label">Est. Annual Generation</span>
+              <span class="result-value" id="calcUnits">11,680 kWh</span>
+            </div>
+            <div class="result-card">
+              <span class="result-label">CO₂ Offset / Year</span>
+              <span class="result-value" id="calcCarbon">9.8 Metric Tons</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-close-modal="solarModal">Close Demo</button>
+        <a href="#contact" class="btn btn-primary" data-close-modal="solarModal">Inquire About Project</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Project Details Modal (General Case Study Modal) -->
+  <div id="projectDetailsModal" class="modal-backdrop" aria-hidden="true" role="dialog"
+    aria-labelledby="projectDetailsTitle">
+    <div class="modal-container glass-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-tag" id="projectDetailsTag">PROJECT OVERVIEW</span>
+          <h3 id="projectDetailsTitle" class="modal-title">Project Details</h3>
+        </div>
+        <button class="modal-close-btn" data-close-modal="projectDetailsModal" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="projectDetailsBody">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-close-modal="projectDetailsModal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Certificate Lightbox Modal -->
+  <div id="certModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="certModalTitle">
+    <div class="modal-container modal-container-lg glass-card cert-modal-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-tag" id="certModalIssuer">INDIAN INSTITUTE OF TECHNOLOGY MADRAS</span>
+          <h3 id="certModalTitle" class="modal-title">Data Science and AI</h3>
+        </div>
+        <button class="modal-close-btn" data-close-modal="certModal" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body cert-modal-body">
+        <div class="cert-image-preview-wrapper">
+          <img id="certModalImg" src="assets/cert-iitm-datascience-ai.png" alt="IIT Madras Data Science and AI Certificate" class="cert-modal-img">
+        </div>
+        <div class="cert-modal-meta">
+          <p id="certModalDate" class="cert-meta-text">Completed: October 2024 &bull; Verified Technical Milestone</p>
+          <p class="cert-note-text" id="certModalNote">
+            <em>Official Certificate of Completion awarded by Centre for Outreach and Digital Education (CODE), IIT Madras.</em>
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a id="downloadCertBtn" href="assets/cert-iitm-datascience-ai.png" download="IITM_DataScience_AI_Certificate.png" class="btn btn-primary" target="_blank">
+          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Certificate
+        </a>
+        <a id="openCertNewTabBtn" href="assets/cert-iitm-datascience-ai.png" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Open Full Image
+        </a>
+        <button class="btn btn-secondary" data-close-modal="certModal">Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Interactive Resume Viewer Modal -->
+  <div id="resumeModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="resumeModalTitle">
+    <div class="modal-container modal-container-lg glass-card resume-modal-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-tag">CURRICULUM VITAE</span>
+          <h3 id="resumeModalTitle" class="modal-title">C. Sanjai &mdash; Resume &amp; Profile</h3>
+        </div>
+        <button class="modal-close-btn" data-close-modal="resumeModal" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body resume-modal-body">
+        <!-- View Mode Switcher Toolbar -->
+        <div class="resume-tabs-nav">
+          <div class="resume-tab-group" role="tablist">
+            <button type="button" class="resume-tab-btn active" id="tabPdfResume" role="tab" aria-selected="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>PDF Document Preview</span>
+            </button>
+            <button type="button" class="resume-tab-btn" id="tabDigitalResume" role="tab" aria-selected="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <span>Digital Web CV</span>
+            </button>
+          </div>
+          <div class="resume-quick-actions">
+            <a href="assets/C_Sanjai_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span>Open in New Tab</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 1. PDF Document Pane (Default active) -->
+        <div id="pdfResumePane" class="resume-pane active">
+          <div class="resume-pdf-container">
+            <iframe id="resumePdfIframe" src="assets/C_Sanjai_Resume.pdf" class="resume-pdf-frame" title="C. Sanjai Resume PDF">
+              <p>Inline PDF viewing is not supported. <a href="assets/C_Sanjai_Resume.pdf" download="C_Sanjai_Resume.pdf">Click here to download the PDF</a>.</p>
+            </iframe>
+          </div>
+        </div>
+
+        <!-- 2. Digital CV Pane -->
+        <div id="digitalResumePane" class="resume-pane" style="display: none;">
+          <div class="digital-resume-sheet">
+            <div class="d-resume-header">
+              <h2 class="d-name">C. SANJAI</h2>
+              <p class="d-subtitle">Electronics and Communication Engineering Student</p>
+              <p class="d-contact-line">
+                Chennai Institute of Technology &bull; Chennai, India &bull;
+                <a href="https://www.linkedin.com/in/sanjai-c-8a284a438/" target="_blank"
+                  rel="noopener noreferrer">LinkedIn Profile</a>
+              </p>
+            </div>
+
+            <div class="d-resume-section">
+              <h4 class="d-sec-title">Academic Background</h4>
+              <div class="d-sec-item">
+                <div class="d-sec-header">
+                  <strong>Bachelor of Engineering (B.E.) in Electronics and Communication Engineering</strong>
+                  <span class="d-date">2026 &mdash; 2030 (Expected)</span>
+                </div>
+                <p class="d-institution">Chennai Institute of Technology, Chennai, Tamil Nadu</p>
+                <p class="d-details">Core study areas: Circuit Theory, Digital Logic Systems, Electronic Devices,
+                  Engineering Mathematics, Microcontrollers &amp; Computer Architecture.</p>
+              </div>
+            </div>
+
+            <div class="d-resume-section">
+              <h4 class="d-sec-title">Verified Certifications</h4>
+              <div class="d-sec-item">
+                <div class="d-sec-header">
+                  <strong>Data Science and AI (8-Week Certification Course)</strong>
+                  <span class="d-date">October 2024</span>
+                </div>
+                <p class="d-institution">Centre for Outreach and Digital Education (CODE), IIT Madras</p>
+                <p class="d-details">Rigorous 8-week certification in foundational Data Science, Machine Learning, and AI methodologies.</p>
+              </div>
+            </div>
+
+            <div class="d-resume-section">
+              <h4 class="d-sec-title">Technical Competencies</h4>
+              <ul class="d-bullet-list">
+                <li><strong>Data Science &amp; AI:</strong> Python Fundamentals, Data Analysis, Machine Learning Concepts (IIT Madras CODE certified).</li>
+                <li><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript (DOM Manipulation, Client Logic, Responsive Design).</li>
+                <li><strong>Programming:</strong> C Programming (Foundational syntax, pointers, problem solving), Python.</li>
+                <li><strong>Core ECE:</strong> Circuit Analysis, Digital Logic, Electronic Components, Microcontroller &amp; IoT concepts.</li>
+                <li><strong>Development Tools:</strong> Git, GitHub, VS Code, Circuit Simulators (Tinkercad, LTspice).</li>
+              </ul>
+            </div>
+
+            <div class="d-resume-section">
+              <h4 class="d-sec-title">Featured Projects</h4>
+              <div class="d-sec-item">
+                <div class="d-sec-header">
+                  <strong>SAN SOLAR Customer Application</strong>
+                  <span class="d-date">HTML5, CSS3, JavaScript</span>
+                </div>
+                <p class="d-details">A customer-focused solar panel installation application designed to estimate suitable
+                  solar capacity based on available space, collect customer details, and support consultation requests.
+                </p>
+              </div>
+              <div class="d-sec-item">
+                <div class="d-sec-header">
+                  <strong>Personal Portfolio Website</strong>
+                  <span class="d-date">HTML5, CSS3, Vanilla JavaScript</span>
+                </div>
+                <p class="d-details">A modern, responsive personal developer portfolio featuring glassmorphic design
+                  tokens, theme switching, dynamic typing animation, and accessible layout.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="assets/C_Sanjai_Resume.pdf" download="C_Sanjai_Resume.pdf" class="btn btn-primary" id="modalDownloadResumeBtn">
+          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download PDF
+        </a>
+        <a href="assets/C_Sanjai_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="modalOpenResumeNewTab">
+          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Open in New Tab
+        </a>
+        <button class="btn btn-secondary" data-close-modal="resumeModal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Toast Notification System -->
+  <div id="toastNotification" class="toast-notification" aria-live="polite" role="status">
+    <div class="toast-icon" id="toastIcon">✓</div>
+    <div class="toast-content" id="toastMessage">Action completed successfully</div>
+  </div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
