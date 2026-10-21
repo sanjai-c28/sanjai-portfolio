@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="certBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="560" rx="16" fill="url(#certBg)"/>
+
+  <!-- Ornate Border -->
+  <rect x="24" y="24" width="752" height="512" rx="12" fill="none" stroke="url(#borderGrad)" stroke-width="2"/>
+  <rect x="36" y="36" width="728" height="488" rx="8" fill="none" stroke="#334155" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- Corner Accents -->
+  <circle cx="48" cy="48" r="6" fill="#38bdf8"/>
+  <circle cx="752" cy="48" r="6" fill="#818cf8"/>
+  <circle cx="48" cy="512" r="6" fill="#818cf8"/>
+  <circle cx="752" cy="512" r="6" fill="#c084fc"/>
+
+  <!-- Certificate Emblem Badge -->
+  <g transform="translate(400, 100)">
+    <circle cx="0" cy="0" r="32" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="3"/>
+    <path d="M-12 -6 L0 8 L16 -10" fill="none" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Header Text -->
+  <text x="400" y="165" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#38bdf8" letter-spacing="4">CERTIFICATE OF ACHIEVEMENT</text>
+  <text x="400" y="195" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#94a3b8" letter-spacing="1">THIS CREDENTIAL IS PROUDLY PRESENTED TO</text>
+
+  <!-- Recipient Name -->
+  <text x="400" y="250" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="1">C. SANJAI</text>
+  <line x1="260" y1="268" x2="540" y2="268" stroke="url(#goldGrad)" stroke-width="2"/>
+
+  <!-- Course & Description -->
+  <text x="400" y="310" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" fill="#e2e8f0" font-weight="600">Web Development Fundamentals (HTML5, CSS3, JS)</text>
+  <text x="400" y="340" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#94a3b8">For successful completion of practical modern web development coursework,</text>
+  <text x="400" y="362" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#94a3b8">responsive design systems, and client-side JavaScript architecture.</text>
+
+  <!-- Details Row -->
+  <g transform="translate(140, 440)">
+    <line x1="0" y1="0" x2="160" y2="0" stroke="#475569" stroke-width="1"/>
+    <text x="80" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8">CIT CHENNAI</text>
+    <text x="80" y="36" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748b">Affiliated Institution</text>
+  </g>
+
+  <g transform="translate(360, 435)">
+    <!-- Seal Icon -->
+    <circle cx="40" cy="-5" r="24" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="2"/>
+    <text x="40" y="1" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="16">⚡</text>
+    <text x="40" y="28" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10b981">VERIFIED</text>
+  </g>
+
+  <g transform="translate(500, 440)">
+    <line x1="0" y1="0" x2="160" y2="0" stroke="#475569" stroke-width="1"/>
+    <text x="80" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38bdf8">2024</text>
+    <text x="80" y="36" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748b">Issue Date</text>
+  </g>
+</svg>
